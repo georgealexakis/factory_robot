@@ -1,0 +1,6 @@
+<launch>
+  <!-- Launch files for Turtlebot Parent Robot, that carries the QR code tag. -->
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+  <include file="$(find freenect_launch)/launch/freenect.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+</launch>

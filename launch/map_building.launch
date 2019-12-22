@@ -1,0 +1,8 @@
+<launch>
+  <!-- Map files will be saved at /maps folder. Also, you can use the Joystick Application for easier navigation. -->
+  <!-- Run in workstation to view the mapping process "roslaunch turtlebot_rviz_launchers view_navigation.launch". -->
+  <!-- When mapping finish, run "rosrun map_server map_saver -f /tmp/my_map" to save map. -->
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+  <include file="$(find turtlebot_navigation)/launch/gmapping_demo.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+</launch>

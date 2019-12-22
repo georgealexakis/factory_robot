@@ -1,0 +1,15 @@
+<launch>
+  <!-- Launch files for 3d reconstruction navigation. Map is in "~/factory_robot/maps/ros/rtabmap.db" folder. -->
+  <!-- Launch "roslaunch rtabmap_ros demo_turtlebot_rviz.launch" for visualization. -->
+  <rosparam file="$(find factory_robot)/config/3d_coordinates.yaml"/>
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+  <include file="$(find factory_robot)/launch/demo_turtlebot_mapping.launch">
+    <arg name="database_path" value="$(find factory_robot)/maps/rtabmap.db"/>
+    <arg name="localization" value="true"/>
+    <arg name="rgbd_odometry" value="true"/>
+  </include>
+  <include file="$(find factory_robot)/launch/tracklive_kinect.launch"/>
+  <node name="motion_node" pkg="factory_robot" type="motion_node" output="screen"/>
+  <node name="servoing_node" pkg="factory_robot" type="servoing_node" output="screen"/>
+</launch>

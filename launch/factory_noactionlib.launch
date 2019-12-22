@@ -1,0 +1,12 @@
+<launch>
+  <!-- Launch files for Turtlebot, Tracklive with Kinect, SLAM, Rosbridge and run motion_node_noactionlib node. -->
+  <rosparam file="$(find factory_robot)/config/coordinates.yaml"/>
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+  <include file="$(find turtlebot_navigation)/launch/amcl_demo.launch">
+    <arg name="map_file" value="$(find factory_robot)/maps/my_map.yaml"/>
+  </include>
+  <include file="$(find factory_robot)/launch/tracklive_kinect.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+  <node name="motion_node_noactionlib" pkg="factory_robot" type="motion_node_noactionlib" output="screen"/>
+  <node name="servoing_node" pkg="factory_robot" type="servoing_node" output="screen"/>
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+  <!-- Launch files for 3d reconstruction mapping. Map is saved in "~/factory_robot/maps/ros/rtabmap.db" folder. -->
+  <!-- Launch "roslaunch rtabmap_ros demo_turtlebot_rviz.launch" for visualization. -->
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+  <include file="$(find factory_robot)/launch/demo_turtlebot_mapping.launch">
+    <arg name="database_path" value="$(find factory_robot)/maps/rtabmap.db"/>
+    <arg name="args" value="--delete_db_on_start"/>
+    <arg name="rgbd_odometry" value="true"/>
+  </include>
+</launch>
