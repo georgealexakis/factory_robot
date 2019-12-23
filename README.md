@@ -46,7 +46,7 @@ Get a copy of the source
 
 ### Install Required Packages
 
-Install turtlebot packages and turtlebot navigation packages with the commands below:
+Install turtlebot package, navigation package and 3d reconstruction package with the commands below:
 
 ``` $ sudo apt-get install ros-kinetic-turtlebot-bringup ```
 
@@ -54,7 +54,7 @@ Install turtlebot packages and turtlebot navigation packages with the commands b
 
 ``` $ sudo apt-get install ros-kinetic-rtabmap-ros ```
 
-Install visp packages that is required for tag detection with the commands below:
+Install visp package that is required for tag detection with the commands below:
 
 ``` $ sudo apt-get install ros-kinetic-visp-auto-tracker ```
 
@@ -62,13 +62,13 @@ Install visp packages that is required for tag detection with the commands below
 
 ``` $ sudo apt-get install ros-kinetic-visp ``` (include all visp packages)
 
-Install RGBD sensor Kinect V1 drivers and packages with the commands below:
+Install RGB-D camera sensor (Kinect V1) drivers and package with the commands below:
 
 ``` $ sudo apt-get install libfreenect-dev ``` (Kinect V1 sensor drivers)
 
 ``` $ sudo apt-get install ros-kinetic-freenect-launch ```
 
-Install rosbridge packages that enables the communication between the robot and remote controller such as ROS Joystick with the commands below:
+Install rosbridge packages that enables the communication between the robot and remote controller, such as ROS Joystick with the commands below:
 
 ``` $ sudo apt-get install ros-kinetic-rosbridge-server ```
 
@@ -76,7 +76,7 @@ Install rosbridge packages that enables the communication between the robot and 
 
 ### 2d Mapping
 
-Start creating the map by running the command below. Then you have to navigate the robot to allover the palce you want to map.
+Start mapping by running the command below. Then you have to navigate the robot to allover the place you want to map.
 
 ``` $ roslaunch factory_robot map_building.launch ```
 
@@ -84,13 +84,13 @@ To view the map run:
 
 ``` $ roslaunch turtlebot_rviz_launchers view_navigation.launch ``` (run on workstation for visualization only, not obligatory)
 
-When mapping process finish, the command below should run to save the map files in /tmp folder with file name “my_map” in project folder:
+When mapping process finish, run to save the map files in /tmp folder with file name “my_map” in project folder:
 
 ``` $ rosrun map_server map_saver –f /tmp/my_map ```
 
 ### 3d Mapping
 
-Start creating the map by running the command below. Then you have to navigate the robot to allover the palce you want to map.
+Start 3d mapping by running the command below. Then you have to navigate the robot to allover the place you want to map.
 
 ``` $ roslaunch factory_robot 3d_reconstruction_mapping.launch ```
 
