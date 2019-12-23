@@ -5,15 +5,17 @@ The implementation consists of different navigation approaches.
 
 ## Table of Contents
 
-[Requirements](#Requirements)
+[Requirements](#requirements)
 
-[Getting Started](#Getting-Started)
+[Getting Started](#getting-Started)
 
-[Executing](#Executing)
+[Executing](#executing)
 
-[Demos](#Demos)
+[Screenshots](#screenshots)
 
-[License](#License)
+[Demos](#demos)
+
+[License](#license)
 
 ## Requirements
 
@@ -32,7 +34,7 @@ Turtlebot 2 equipped with:
 * RpLidar
 * Generic Router
 
-## Getting-Started
+## Getting Started
 
 ### Download the Source of Project
 
@@ -126,6 +128,16 @@ You can use a second Turtlebot 2 to carry the QR code tag. Run the command below
 ### QR Code Tags
 
 The used QR code tags for the demo implementation are loacted in folder [/QRcodetags](https://github.com/georgealexakis/factory_robot/tree/master/QRcodetags) folder. Print to A4 size.
+
+## Screenshots
+
+![2d_map](screenshots/2d_map.png)
+
+![2d_navigation](screenshots/2d_navigation.png)
+
+![3d_map](screenshots/3d_map.png)
+
+![3d_navigation](screenshots/3d_navigation.png)
 
 ## Demos
 
