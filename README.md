@@ -1,7 +1,6 @@
 # Factory Robot - Autonomous Navigated Robot with QR Code Detection
 
-Factory Robot is an implementation of Autonomous Navigated Robot with QR Code Detection and Visual Servoing.
-The implementation consists of different navigation approaches.
+Factory Robot is an implementation of Autonomous Navigated Robot with QR Code Detection and Visual Servoing. The implementation consists of different navigation approaches. For the implementation has been used [ROS Joystick](https://github.com/georgealexakis/ros-joystick).
 
 ## Table of Contents
 
@@ -120,8 +119,7 @@ or for 3d map navigation
 
 ### Visual Servoing
 
-For, visual servoing part is not necessary to have specific map and specific position. Just a specific tag with "qr5" integrated information and black boundary.
-You can use a second Turtlebot 2 to carry the QR code tag. Run the command below to enable remote controling to a second Turtlebot 2 and attach the tag on it.
+For, visual servoing part is not necessary to have specific map and specific position. Just a specific tag with "qr5" integrated information and black boundary. You can use a second Turtlebot 2 to carry the QR code tag. Run the command below to enable remote controling to a second Turtlebot 2 and attach the tag on it.
 
 ``` $ roslaunch factory_robot servoing_parent.launch ```
 
