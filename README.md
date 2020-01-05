@@ -8,7 +8,7 @@ Factory Robot is an implementation of Autonomous Navigated Robot with QR Code De
 
 [Getting Started](#getting-Started)
 
-[Executing](#executing)
+[Execution](#execution)
 
 [Screenshots](#screenshots)
 
@@ -73,7 +73,7 @@ Install rosbridge packages that enables the communication between the robot and 
 
 ``` $ sudo apt-get install ros-kinetic-rosbridge-server ```
 
-## Executing
+## Execution
 
 ### 2d Mapping
 
