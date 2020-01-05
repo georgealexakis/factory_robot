@@ -1,7 +1,7 @@
 /*
  *
  * Project Name: Factory Robot
- * Description: This is an implementation of a autonomous navigated robot, that also can avoid obstacles, through QR code tag detection.
+ * Description: This is an implementation of an autonomous navigated robot, that also can avoid obstacles, through QR code tag detection.
  * 
  */
 
