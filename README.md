@@ -1,6 +1,6 @@
 # Factory Robot - Autonomous Navigated Robot with QR Code Detection
 
-Factory Robot is an implementation of Autonomous Navigated Robot with QR Code Detection and Visual Servoing. The implementation consists of different navigation approaches. For the implementation has been used [ROS Joystick](https://github.com/georgealexakis/ros-joystick).
+Factory Robot is an implementation of Autonomous Navigated Robot with QR Code Detection and Visual Servoing. The implementation consists of different navigation approaches. During the implementation has been used [ROS Joystick](https://github.com/georgealexakis/ros-joystick).
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ Factory Robot is an implementation of Autonomous Navigated Robot with QR Code De
 
 ## Requirements
 
-Below is pressented the software and hardware that this implementation has been tested.
+Below is presented  the software and hardware that this implementation has been tested.
 
 ### Software
 
@@ -69,7 +69,7 @@ Install RGB-D camera sensor (Kinect V1) drivers and package with the commands be
 
 ``` $ sudo apt-get install ros-kinetic-freenect-launch ```
 
-Install rosbridge packages that enables the communication between the robot and remote controller, such as ROS Joystick with the commands below:
+Install rosbridge packages that enable the communication between the robot and remote controller, such as ROS Joystick with the commands below:
 
 ``` $ sudo apt-get install ros-kinetic-rosbridge-server ```
 
@@ -77,7 +77,7 @@ Install rosbridge packages that enables the communication between the robot and 
 
 ### 2d Mapping
 
-Start mapping by running the command below. Then you have to navigate the robot to allover the place you want to map.
+Start mapping by running the command below. Then you have to navigate the robot all over the place you want to map.
 
 ``` $ roslaunch factory_robot map_building.launch ```
 
@@ -85,7 +85,7 @@ To view the map run:
 
 ``` $ roslaunch turtlebot_rviz_launchers view_navigation.launch ``` (run on workstation for visualization only, not obligatory)
 
-When mapping process finish, run to save the map files in /tmp folder with file name “my_map” in project folder:
+When mapping process finishes, run to save the map files in /tmp folder with file name “my_map” in the project folder:
 
 ``` $ rosrun map_server map_saver –f /tmp/my_map ```
 
@@ -119,13 +119,13 @@ or for 3d map navigation
 
 ### Visual Servoing
 
-For, visual servoing part is not necessary to have specific map and specific position. Just a specific tag with "qr5" integrated information and black boundary. You can use a second Turtlebot 2 to carry the QR code tag. Run the command below to enable remote controling to a second Turtlebot 2 and attach the tag on it.
+For, visual servoing part is not necessary to have a specific map and specific position. Just a specific tag with "qr5" integrated information and black boundary. You can use a second Turtlebot 2 to carry the QR code tag. Run the command below to enable remote controlling to a second Turtlebot 2 and attach the tag on it.
 
 ``` $ roslaunch factory_robot servoing_parent.launch ```
 
 ### QR Code Tags
 
-The used QR code tags for the demo implementation are loacted in folder [/QRcodetags](https://github.com/georgealexakis/factory_robot/tree/master/QRcodetags) folder. Print to A4 size.
+The used QR code tags for the demo implementation are located in the folder [/QRcodetags](https://github.com/georgealexakis/factory_robot/tree/master/QRcodetags) folder. Print to A4 size.
 
 ## Screenshots
 
