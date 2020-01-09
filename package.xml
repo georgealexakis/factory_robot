@@ -2,7 +2,7 @@
 <package format="2">
   <name>factory_robot</name>
   <version>0.1.1</version>
-  <description>The factory robot package</description>
+  <description>Factory Robot is an implementation of Autonomous Navigated Robot with QR Code Detection and Visual Servoing.</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
