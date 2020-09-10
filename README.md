@@ -147,6 +147,6 @@ The used QR code tags for the demo implementation are located in the folder [/QR
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
