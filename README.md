@@ -45,7 +45,7 @@ Get a copy of the source
 
 ``` $ git clone https://github.com/georgealexakis/factory_robot.git (master branch) ```
 
-### Install Required Packages
+### Required Packages Installation
 
 Install turtlebot package, navigation package and 3d reconstruction package with the commands below:
 
