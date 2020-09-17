@@ -139,11 +139,11 @@ The used QR code tags for the demo implementation are located in the folder [/QR
 
 ## Demos
 
-[Autonomous Navigation Demo with QR Code Tag Triggering.](https://1drv.ms/v/s!Amy4EDOPS0vXt3R2XTTlGGF9mVfr?e=eelxwM)
+[Autonomous Navigation Demo with QR Code Tag Triggering.](https://1drv.ms/v/s!Amy4EDOPS0vX2Rkr8BAxNO0VNxk9?e=3aWCRT)
 
-[Autonomous Navigation Demo with ROS Joystick Triggering.](https://1drv.ms/v/s!Amy4EDOPS0vXuAd8j5KvkP5_QkAh?e=oK5X2Z)
+[Autonomous Navigation Demo with ROS Joystick Triggering.](https://1drv.ms/v/s!Amy4EDOPS0vX2RjTbNQ9g9B2cD6k?e=nv1mh8)
 
-[Visual Servoing Demo.](https://1drv.ms/v/s!Amy4EDOPS0vXuAYb-V-GmqbXvrG6?e=vSMRQd)
+[Visual Servoing Demo.](https://1drv.ms/v/s!Amy4EDOPS0vX2RdZTmY21WDtKqks?e=ScvSUZ)
 
 ## License
 
