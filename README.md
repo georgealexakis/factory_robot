@@ -18,7 +18,7 @@ Factory Robot is an implementation of Autonomous Navigated Robot with QR Code De
 
 ## Requirements
 
-Below is presented  the software and hardware that this implementation has been tested.
+Below is presented the software and hardware that this implementation has been tested.
 
 ### Software
 
