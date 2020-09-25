@@ -106,18 +106,18 @@ To view the map run:
 
 When mapping process finish, the map database will be saved to “~/factory_robot/maps/ros/rtabmap.db" folder.
 
-### Robot Positioning and Orientation
+### Positioning and Orientation
 
-Put the QR Code tags to the right positions as presented below. Every tag represents one position in the map. Below are presented the position of every tag and the schematic of a simulation. It is able to create any different simulation by changing the tag in the map.
+Every QR Code tag represents one position in the map. Put every QR Code tag to the desired positions. Below are presented the position of every tag and the schematic of a demo simulation. You can create any different simulation by changing the tag positiong in the map.
 
 1. qr1 is initial position (number 1).
 2. qr2 is opposite from qr1 position (number 2).
 3. qr3 is left from qr1 position (number 3).
 4. qr4 is right from qr1 position (number 4).
 
-![2d_map](screenshots/schematic1.png)
+![Autonomous Navigation Schematic](screenshots/schematic1.png)
 
-Put the robot to the initial position before run any command. It is necessary for localization. The initial position and orientation is presented below as the project is developed in the Robotics Lab :
+Put the robot to the initial position before run any command. It is necessary for localization. The initial position and orientation is presented below as the project is developed in the [Robotics Lab](http://vibot.cnrs.fr/):
 
 <p align="center">
     <img src="/screenshots/lab1.jpg" width="32%" title="Robotics Lab 1" />
@@ -141,15 +141,19 @@ or for 3d map navigation
 
 ``` $ roslaunch factory_robot factory_3d_reconstruction.launch ``` (with actionlib)
 
+When everything is ready the terminal will show the message "odom received" as is presented below:
+
+![Odom Received”](screenshots/terminal.png)
+
 ### Visual Servoing
 
 For, visual servoing part is not necessary to have a specific map and specific position. Just a specific tag with "qr5" integrated information and black boundary. You can use a second Turtlebot 2 to carry the QR code tag. Run the command below to enable remote controlling to a second Turtlebot 2 and attach the tag on it.
 
 ``` $ roslaunch factory_robot servoing_parent.launch ```
 
-Below is presented a demo scenario of visual servoing in the Robotics Lab.
+Below is presented a demo scenario of visual servoing in the [Robotics Lab](http://vibot.cnrs.fr/).
 
-![2d_map](screenshots/schematic2.png)
+![Visual Servoing Schematic](screenshots/schematic2.png)
 
 ### QR Code Tags
 
