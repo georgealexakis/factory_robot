@@ -41,33 +41,38 @@ Navigate to catkin_ws/src
 
 ``` $ cd ~/catkin_ws/src ```
 
-Get a copy of the source
+Get a copy of the source and build it
 
-``` $ git clone https://github.com/georgealexakis/factory_robot.git (master branch) ```
+```
+$ git clone https://github.com/georgealexakis/factory_robot.git (master branch)
+$ cd ~/catkin_ws
+$ catkin_make
+```
 
 ### Required Packages Installation
 
 Install turtlebot package, navigation package and 3d reconstruction package with the commands below:
 
-``` $ sudo apt-get install ros-kinetic-turtlebot-bringup ```
-
-``` $ sudo apt-get install ros-kinetic-turtlebot-navigation ```
-
-``` $ sudo apt-get install ros-kinetic-rtabmap-ros ```
+```
+$ sudo apt-get install ros-kinetic-turtlebot-bringup
+$ sudo apt-get install ros-kinetic-turtlebot-navigation
+$ sudo apt-get install ros-kinetic-rtabmap-ros
+```
 
 Install visp package that is required for tag detection with the commands below:
 
-``` $ sudo apt-get install ros-kinetic-visp-auto-tracker ```
-
-``` $ sudo apt-get install ros-kinetic-vision-visp ``` (complete stack)
-
-``` $ sudo apt-get install ros-kinetic-visp ``` (include all visp packages)
+```
+$ sudo apt-get install ros-kinetic-visp-auto-tracker
+$ sudo apt-get install ros-kinetic-vision-visp (complete stack)
+$ sudo apt-get install ros-kinetic-visp (include all visp packages)
+```
 
 Install RGB-D camera sensor (Kinect V1) drivers and package with the commands below:
 
-``` $ sudo apt-get install libfreenect-dev ``` (Kinect V1 sensor drivers)
-
-``` $ sudo apt-get install ros-kinetic-freenect-launch ```
+```
+$ sudo apt-get install libfreenect-dev (Kinect V1 sensor drivers)
+$ sudo apt-get install ros-kinetic-freenect-launch
+```
 
 Install rosbridge packages that enable the communication between the robot and remote controller, such as ROS Joystick with the commands below:
 
@@ -101,6 +106,25 @@ To view the map run:
 
 When mapping process finish, the map database will be saved to “~/factory_robot/maps/ros/rtabmap.db" folder.
 
+### Robot Positioning and Orientation
+
+Put the QR Code tags to the right positions as presented below. Every tag represents one position in the map. Below are presented the position of every tag and the schematic of a simulation. It is able to create any different simulation by changing the tag in the map.
+
+1. qr1 is initial position (number 1).
+2. qr2 is opposite from qr1 position (number 2).
+3. qr3 is left from qr1 position (number 3).
+4. qr4 is right from qr1 position (number 4).
+
+![2d_map](screenshots/schematic1.png)
+
+Put the robot to the initial position before run any command. It is necessary for localization. The initial position and orientation is presented below as the project is developed in the Robotics Lab :
+
+<p align="center">
+    <img src="/screenshots/lab1.jpg" width="32%" title="Robotics Lab 1" />
+    <img src="/screenshots/lab2.jpg" width="32%" title="Robotics Lab 2" />
+    <img src="/screenshots/lab3.jpg" width="32%" title="Robotics Lab 3" />
+</p>
+
 ### Autonomous Navigation to Specific Positions
 
 Run one of the commands below to start all robot procedures. The first command uses actionlib for autonomous navigation and the second does not.
@@ -122,6 +146,10 @@ or for 3d map navigation
 For, visual servoing part is not necessary to have a specific map and specific position. Just a specific tag with "qr5" integrated information and black boundary. You can use a second Turtlebot 2 to carry the QR code tag. Run the command below to enable remote controlling to a second Turtlebot 2 and attach the tag on it.
 
 ``` $ roslaunch factory_robot servoing_parent.launch ```
+
+Below is presented a demo scenario of visual servoing in the Robotics Lab.
+
+![2d_map](screenshots/schematic2.png)
 
 ### QR Code Tags
 
