@@ -141,7 +141,7 @@ or for 3d map navigation
 
 ``` $ roslaunch factory_robot factory_3d_reconstruction.launch ``` (with actionlib)
 
-When everything is ready the terminal will show the message "odom received" as is presented below:
+When everything is ready the terminal will show the message "odom received" as presented below:
 
 ![Odom Received”](screenshots/terminal.png)
 
