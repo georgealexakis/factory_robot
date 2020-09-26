@@ -90,7 +90,7 @@ To view the map run:
 
 ``` $ roslaunch turtlebot_rviz_launchers view_navigation.launch ``` (run on workstation for visualization only, not obligatory)
 
-When mapping process finishes, run to save the map files in /tmp folder with file name “my_map” in the project folder:
+When mapping process finishes, run to save the map files in /tmp folder with file name "my_map" in the project folder:
 
 ``` $ rosrun map_server map_saver –f /tmp/my_map ```
 
@@ -104,7 +104,7 @@ To view the map run:
 
 ``` $ roslaunch rtabmap_ros demo_turtlebot_rviz.launch ``` (run on workstation for visualization only, not obligatory)
 
-When mapping process finish, the map database will be saved to “~/factory_robot/maps/ros/rtabmap.db" folder.
+When mapping process finish, the map database will be saved to "~/factory_robot/maps/ros/rtabmap.db" folder.
 
 ### Positioning and Orientation
 
